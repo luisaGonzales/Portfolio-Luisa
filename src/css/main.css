@@ -4,7 +4,7 @@
 * {
   box-sizing: border-box; }
 
-.buttonSVG, #about .description .resume, .btnSend {
+.buttonSVG, .resume, .btnSend {
   font-family: "Dosis", sans-serif;
   background-image: url("../img/button-bg.svg");
   font-size: 18px;
@@ -23,52 +23,71 @@
   color: #222222;
   background-color: transparent; }
 
-.titles, #about .description .title, .badgets .content .badgetTitle, .contact .titleContact, .titlePortfolio, .skills .titleSkills, .lang .titleLang {
+.titles, .titleAbout, .badgets .content .badgetTitle, .contact .titleContact, .titlePortfolio, .skills .titleSkills, .lang .titleLang {
   font-family: "Dosis", sans-serif;
   text-transform: uppercase;
   letter-spacing: 10px; }
 
-.texts, #about .description .textAbout, .badgets, .skills ul > li, .lang ul > li {
+.texts, .textAbout, .badgets, .skills ul > li, .lang ul > li {
   font-family: "Dosis", sans-serif;
   font-size: 1.4em; }
 
 #about {
   padding-top: 5%;
+  width: 100%;
   height: 100vh; }
-  #about .photo {
-    margin-left: 25%;
-    width: auto;
-    height: 550px; }
-  #about .description {
-    padding-right: 20%;
-    padding-top: 8%;
-    font-family: "Dosis", sans-serif; }
-    #about .description .textAbout {
-      padding: 8% 6%;
-      text-align: justify; }
-      #about .description .textAbout a {
-        color: #222222; }
-    #about .description .resume .linkCV {
-      color: #2b2a2a9a;
-      padding: 5px; }
-    #about .description .resume .linkCV:hover {
-      color: #272727;
-      text-decoration: none; }
 
-@media only screen and (min-width: 321px) and (max-width: 480px) {
+.photo {
+  margin-left: 25%;
+  width: auto;
+  height: 550px; }
+
+.description {
+  padding-right: 20%;
+  padding-top: 8%;
+  font-family: "Dosis", sans-serif; }
+
+.textAbout {
+  padding: 8% 6%;
+  text-align: justify; }
+  .textAbout a {
+    color: #222222; }
+
+.resume .linkCV {
+  color: #2b2a2a9a;
+  padding: 5px; }
+.resume .linkCV:hover {
+  color: #272727;
+  text-decoration: none; }
+
+@media only screen and (min-width: 240px) and (max-width: 768px) {
   .about {
-    padding-top: 5%;
-    height: 62vh; }
-    .about .title {
-      text-transform: uppercase;
-      letter-spacing: 3px; }
-    .about .description {
-      padding-right: 0%;
-      padding: 5%;
-      text-orientation: justify; }
-    .about .icons {
-      margin-right: 20px;
-      font-size: 1.2em; } }
+    padding-top: 5%; }
+
+  .description {
+    padding: 0%;
+    padding-top: 30%;
+    padding-bottom: 30%;
+    text-orientation: justify; }
+
+  #about {
+    vertical-align: middle; }
+
+  .icons {
+    margin-right: 20px;
+    font-size: 1.2em; }
+
+  .titleAbout {
+    text-transform: uppercase;
+    letter-spacing: 3px; } }
+@media (min-width: 768px) and (max-width: 1199px) {
+  .description {
+    padding-top: 30%;
+    padding-bottom: 30%;
+    text-orientation: justify; }
+
+  #about {
+    margin: 0 auto; } }
 .badgets {
   height: 160px;
   display: flex;
@@ -190,73 +209,78 @@
 .fa-inverse {
   color: #222222; }
 
-#header {
+* {
+  outline: red solid 1px; }
+
+.header {
   background-image: url("../img/Header.jpg");
-  background-position: 50% 0px;
-  height: 662px;
-  background-attachment: fixed;
-  position: relative;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-position-y: -130px;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover; }
-  #header .name {
-    font-family: "Kaushan Script", cursive;
-    color: #222222;
-    font-size: 3.5em;
-    padding-top: 15%; }
-  #header .title {
-    font-family: "Dosis", sans-serif;
-    background-image: url("../img/button-bg.svg");
-    font-size: 18px;
-    line-height: 62px;
-    width: 277px;
-    height: 62px;
-    margin: 0 auto;
-    padding: 0;
-    text-transform: uppercase;
-    background-size: contain;
-    clear: both;
-    min-width: 200px;
-    text-align: center;
-    text-decoration: none;
-    border: 0;
-    color: #222222;
-    background-color: transparent; }
-  #header .scroll {
-    position: absolute;
-    width: 100px;
-    height: auto;
-    top: 588px;
-    left: 49%;
-    margin: 0 auto 0;
-    -webkit-perspective: 1000;
-    -webkit-backface-visibility: hidden; }
-    #header .scroll .pulse-button {
-      display: block;
-      width: 50px;
-      height: 50px;
-      font-weight: light;
-      text-align: center;
-      line-height: 65px;
-      letter-spacing: -1px;
-      color: #222222;
-      border: none;
-      border-radius: 50%;
-      background: #ffe042;
-      cursor: pointer;
-      box-shadow: 0 0 0 0 #ffe0425d;
-      -webkit-animation: pulse 1.5s infinite; }
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center; }
+
+.name {
+  font-family: "Kaushan Script", cursive;
+  color: #222222;
+  font-size: 3.5em;
+  padding-top: 11%; }
+
+.title {
+  font-family: "Dosis", sans-serif;
+  background-image: url("../img/button-bg.svg");
+  font-size: 18px;
+  line-height: 62px;
+  width: 277px;
+  height: 62px;
+  margin: 0 auto;
+  padding: 0;
+  text-transform: uppercase;
+  background-size: contain;
+  clear: both;
+  min-width: 200px;
+  text-align: center;
+  text-decoration: none;
+  border: 0;
+  color: #222222;
+  background-color: transparent; }
+
+.pulse-button {
+  display: block;
+  width: 50px;
+  height: 50px;
+  font-weight: light;
+  text-align: center;
+  line-height: 65px;
+  letter-spacing: -1px;
+  color: #222222;
+  border: none;
+  border-radius: 50%;
+  background: #ffe042;
+  cursor: pointer;
+  box-shadow: 0 0 0 0 #ffe0425d;
+  -webkit-animation: pulse 1.5s infinite; }
+
+.scroll {
+  position: absolute;
+  width: 100px;
+  height: auto;
+  bottom: 1%;
+  left: 49%;
+  margin: 0 auto 0;
+  -webkit-perspective: 1000;
+  -webkit-backface-visibility: hidden; }
 
 .padreScroll {
   position: fixed 0; }
 
 @media only screen and (min-width: 321px) and (max-width: 480px) {
   #header {
-    height: 566px; }
+    height: 366px; }
     #header .name {
       padding-top: 0%; } }
 @-webkit-keyframes pulse {
@@ -280,17 +304,20 @@
 .phrase {
   background-color: #ffe042;
   text-align: center;
-  height: 20vh;
+  width: 100%;
+  height: auto;
   font-family: "Dosis", sans-serif; }
-  .phrase .text {
-    font-size: 2em;
-    padding: 20px;
-    padding-top: 20px;
-    padding-bottom: 0px;
-    margin-top: 10px; }
-  .phrase .author {
-    font-size: 1.2em;
-    padding-right: 20%; }
+
+.text {
+  font-size: 2em;
+  padding: 20px;
+  padding-top: 20px;
+  padding-bottom: 0px;
+  margin-top: 10px; }
+
+.author {
+  font-size: 1.2em;
+  padding-right: 20%; }
 
 .portfolioImg {
   width: 100%;

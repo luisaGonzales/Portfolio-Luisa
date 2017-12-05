@@ -1,67 +1,74 @@
-#header {
+* {
+    outline: red solid 1px;
+}
+
+.header {
     background-image: url('../img/Header.jpg');
-    background-position: 50% 0px;
-    height: 662px;
-    background-attachment: fixed;
-    position: relative;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-position-y: -130px;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    .name {
-        font-family: $font1;
-        color: $dark;
-        font-size: 3.5em;
-        padding-top: 15%;
-    }
-    .title {
-        font-family: $font2;
-        background-image: url('../img/button-bg.svg');
-        font-size: 18px;
-        line-height: 62px;
-        width: 277px;
-        height: 62px;
-        margin: 0 auto;
-        padding: 0;
-        text-transform: uppercase;
-        background-size: contain;
-        clear: both;
-        min-width: 200px;
-        text-align: center;
-        text-decoration: none;
-        border: 0;
-        color: $dark;
-        background-color: transparent;
-    }
-    .scroll {
-        position: absolute;
-        width: 100px;
-        height: auto;
-        top: 588px;
-        left: 49%;
-        margin: 0 auto 0;
-        -webkit-perspective: 1000;
-        -webkit-backface-visibility: hidden;    
-        .pulse-button {
-            display: block;
-            width: 50px;
-            height: 50px;
-            font-weight: light;
-            text-align: center;
-            line-height: 65px;
-            letter-spacing: -1px;
-            color: $dark;
-            border: none;
-            border-radius: 50%;
-            background: $light;
-            cursor: pointer;
-            box-shadow: 0 0 0 0 $lightOpacity;
-            -webkit-animation: pulse 1.5s infinite;
-        }
-    }    
+    width: 100%;
+    height: 100vh;
+    background-attachment: fixed;
+    // position: relative;
+    background-repeat: no-repeat;
+    background-position: center center;
+    // background-position-y: -130px;  
+}
+
+.name {
+    font-family: $font1;
+    color: $dark;
+    font-size: 3.5em;
+    padding-top: 11%;
+}
+
+
+.title {
+    font-family: $font2;
+    background-image: url('../img/button-bg.svg');
+    font-size: 18px;
+    line-height: 62px;
+    width: 277px;
+    height: 62px;
+    margin: 0 auto;
+    padding: 0;
+    text-transform: uppercase;
+    background-size: contain;
+    clear: both;
+    min-width: 200px;
+    text-align: center;
+    text-decoration: none;
+    border: 0;
+    color: $dark;
+    background-color: transparent;
+}
+.pulse-button {
+    display: block;
+    width: 50px;
+    height: 50px;
+    font-weight: light;
+    text-align: center;
+    line-height: 65px;
+    letter-spacing: -1px;
+    color: $dark;
+    border: none;
+    border-radius: 50%;
+    background: $light;
+    cursor: pointer;
+    box-shadow: 0 0 0 0 $lightOpacity;
+    -webkit-animation: pulse 1.5s infinite;
+}
+.scroll {
+    position: absolute;
+    width: 100px;
+    height: auto;
+    bottom: 1%;
+    left: 49%;
+    margin: 0 auto 0;
+    -webkit-perspective: 1000;
+    -webkit-backface-visibility: hidden;    
 }
 
 .padreScroll {
@@ -82,19 +89,23 @@
 
 @media only screen and (min-width: 321px) and (max-width: 480px) {
     #header {
-        height: 566px;
+        height: 366px;
         .name {
             padding-top: 0%;
         }
     }
 }
+
 //MEDIA-QUERIES
 $full-hd: "(min-width: 1400px)";
 $desktopMin: "min-width: 1200px";
 $desktopMax: "max-width: 1399px";
+
 $laptopMin: "min-width:992px";
 $laptopMax: 'max-width:1199px';
+
 $tabletMin: "min-width: 768px";
+
 $mobileMax: 'max-width: 768px';
 $mobileMin: "min-width: 240px";
 

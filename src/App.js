@@ -21,6 +21,7 @@ const App = ({personal, socials, info, repos, language}) => {
       <Header name={personal.name} who={personal.who} />
       <About title={info[language].titles.sectionAbout} info={info[language].about} titleResume={info[language].titles.resume} />
       <Phrase phrase={info[language].phrase.text} author={info[language].phrase.author} />
+      {/*
       <Skills title={info[language].titles.sectionSkills} />
       <hr/>
       <Lang title={info[language].titles.sectionLang}/>
@@ -28,6 +29,7 @@ const App = ({personal, socials, info, repos, language}) => {
       <Portfolio title={info[language].titles.sectionPortfolio} info={info[language]} />
       <Contact title={info[language].titles.sectionContact}/>
       <Footer />
+      */}
     </div>
       
   );
