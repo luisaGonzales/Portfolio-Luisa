@@ -1,0 +1,80 @@
+.contact{
+    padding-top: 4%;
+    padding-bottom: 6%;
+    .titleContact {
+        @extend .titles;
+        padding: 4%;
+    }
+    .photoSmile {
+        background-image: url('../img/Smile.jpg');
+        height: 250px;
+        background-attachment: fixed;
+        position: relative;
+        background-repeat: no-repeat;
+        background-position: center center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        background-position-y: -260px;
+    }
+}
+
+.content-contact .form-control {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.1);
+    border-radius: 0;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.form-control {
+    display: block;
+    width: 90%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+.btnSend {
+    @extend .buttonSVG;
+    margin: 0 auto;
+    display : flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.icons{
+   
+    width: 100%;
+    height: 80px;
+    border-radius: 50%;
+    display: block;
+    align-content: center;
+    margin-right: 10px;
+    font-size: 0.8em;
+}
+
+.fa-circle {
+    color: $light;
+}
+
+.fa-inverse {
+    color: $dark;
+}
+
+
+
+
+
+

@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat');
+// @font-face {
+//     font-family: "Monthoers";
+//     src: url("../fonts/Monthoers.ttf");
+// }
+// @font-face {
+//     font-family: "Flow" ;
+//     src: url("../fonts/Flow.otf");
+// }
+@import url('https://fonts.googleapis.com/css?family=Dosis:300,400,500,600,700,800|Varela+Round');
+@import url('https://fonts.googleapis.com/css?family=Convergence|Muli');
+// Colors
+
+$light : #ffe042;
+$lightOpacity : #ffe0425d;
+$dark : #222222;
+$neutro : #ffffff;
+
+
+
+//Fonts
+
+$font1 : 'Kaushan Script', cursive;
+$font2 : 'Dosis', sans-serif;
+$font3 : 'Muli', sans-serif;
+$font4 : 'Convergence', sans-serif;
+//Fuentes de texto
+// $font1 : 'Montserrat', sans-serif;
+
+// $font3 : 'Monthoers', cursive;
+// $font4 : 'Varela Round', sans-serif;
+// $font5 : 
+// $font6 : 'Flow', cursive;
+
+//Size font
+$sizep : 1.2em;
+//mixins
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+       -moz-border-radius: $radius;
+        -ms-border-radius: $radius;
+            border-radius: $radius;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.buttonSVG {
+    font-family: $font2;
+    background-image: url('../img/button-bg.svg');
+    font-size: 18px;
+    line-height: 62px;
+    width: 277px;
+    height: 62px;
+    margin: 0 auto;
+    padding: 0;
+    text-transform: uppercase;
+    background-size: contain;
+    clear: both;
+    min-width: 200px;
+    text-align: center;
+    text-decoration: none;
+    border: 0;
+    color: $dark;
+    background-color: transparent;
+}
+
+.titles {
+    font-family: $font2;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+}
+
+.texts {
+    font-family: $font2;
+    font-size: 1.4em;
+    
+}
+

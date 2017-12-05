@@ -1,0 +1,57 @@
+#about {
+    padding-top: 5%;
+    height: 100vh;
+    .photo {
+        margin-left: 25%;
+        width: auto;
+        height: 550px; 
+    }
+    .description {
+        padding-right: 20%;
+        padding-top: 8%;
+        font-family: $font2;
+        .title {
+            @extend .titles;
+        }
+        .textAbout {
+            @extend .texts;
+            padding: 8% 6%;
+            text-align: justify;
+            a {
+                color: $dark;
+            }
+        }
+        .resume {
+            @extend .buttonSVG;
+            .linkCV {
+                color : #2b2a2a9a;
+                padding: 5px;
+            }
+            
+            .linkCV:hover {
+                color : #272727;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width : 321px) and (max-width : 480px) {
+    .about {
+        padding-top: 5%;
+        height: 62vh;
+        .title {
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+        .description {
+            padding-right: 0%;
+            padding: 5%;
+            text-orientation: justify;
+        }
+        .icons {
+            margin-right: 20px;
+            font-size: 1.2em;
+        }
+    }
+}
