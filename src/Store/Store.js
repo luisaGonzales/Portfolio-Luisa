@@ -57,7 +57,19 @@ const initialState = {
                 github : ["https://github.com/luisagonzales/ReservaAsientos-POC/", "https://github.com/luisagonzales/freeLancer-Flex/", "https://github.com/luisagonzales/Invitations-MVC/", "https://github.com/luisagonzales/saveKoalasII/", "https://github.com/luisagonzales/runMaze/", "https://github.com/luisagonzales/memoryGame/", "https://github.com/luisagonzales/Project-Routing/", "https://github.com/luisagonzales/Scoreboard-State/", "https://github.com/luisagonzales/guideBoxModel/"],
                 titles : ["Reserva de Asientos", "Empezando Bootstrap", "Invitaciones", "Fundación de Koalas", "Laberinto", "Juego de Memoria", "Plataforma JS", "Scoreboard", "Amante del Té" ],
                 description : ["Reservar asientos en un avión, nunca había sido tan fácil", "Un portafolio muy particular", "Checklist para los invitados de una boda", "Salva a los Koalas, estos amigos son muy necesarios", "¿Puedes resolver este laberinto?", "Desafía un poco tu memoria", "Ninguna plataforma había tenido tanta información", "Controla a todos los jugadores en varias partidas", "¿Eres un amante del té?, esta página es para ti"]
-            }
+            }, 
+            skill : [
+                ["React", 4],
+                ["Redux", 3.5 ], 
+                ["Javascript/ES6", 4], 
+                ["jQuery", 4.5 ], 
+                ["GitHub/Git", 4.5], 
+                ["HTML5", 5], 
+                ["CSS3/SASS", 4], 
+                ["Agile Driven Development", 5], 
+                ["Bootstrap / Materialize", 4.5], 
+                ["React Bootstrap", 4.5]  
+            ]
         },
         {
             titles : {

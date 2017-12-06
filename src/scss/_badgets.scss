@@ -5,70 +5,123 @@ $size : 160px;
     display: flex;
     margin: 0px;
     @extend .texts;
-    .content {
-        height: 100%;
-        background-color: $light; 
-        line-height: 1.5em;
-        font-size: 18px;
-        .badgetTitle {
-            @extend .titles;
-            padding: 30px;
-        } 
-    }
-    .imageBox {
-        height: 100%;
-        border-left: 100px solid $light;
-        border-bottom: $size solid transparent;
-        background-position: -150px 0px;
-        position: relative;
-        .alls {
-            padding-top: 30px;
-            .badge {
-                display: inline-block;
-                min-width: 10px;
-                padding: 3px 7px;
-                font-size: 12px;
-                font-weight: bold;
-                color: $dark;
-                line-height: 1;
-                vertical-align: baseline;
-                white-space: nowrap;
-                text-align: center;
-                border-radius: 10px;
-                background-color: transparent;
-                position: relative;
-                .insignia {
-                    width: 110px;
-                }
-                .times {
-                    width: 30px;
-                    height: 30px;
-                    background-color: $light;
-                    border-radius: 50%;
-                    position: absolute;
-                    bottom: 0px;
-                    right: 15px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    line-height: 20px;
-                    p {
-                        margin: 0;
-                    }
-                }
-            }
-        }
+}
+
+.content {
+    height: 100%;
+    background-color: $light; 
+    line-height: 1.5em;
+    font-size: 18px;
+    .badgetTitle {
+        @extend .titles;
+        padding: 30px;
+    } 
+}
+
+.imageBox {
+    height: 100%;
+    border-left: 100px solid $light;
+    border-bottom: $size solid transparent;
+    background-position: -150px 0px;
+    position: relative;
+    
+}
+.alls {
+    padding-top: 30px;
+    
+}
+
+.badge {
+    display: inline-block;
+    min-width: 10px;
+    padding: 3px 7px;
+    font-size: 12px;
+    font-weight: bold;
+    color: $dark;
+    line-height: 1;
+    vertical-align: baseline;
+    white-space: nowrap;
+    text-align: center;
+    border-radius: 10px;
+    background-color: transparent;
+    position: relative;
+}
+.insignia {
+    width: 110px;
+}
+.times {
+    width: 30px;
+    height: 30px;
+    background-color: $light;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0px;
+    right: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 20px;
+    p {
+        margin: 0;
     }
 }
 
-@media (min-width : 319px) and (max-width : 480px) {
-    .badgets  {
-        display: inline;
+// @media ($desktopMin) and ($desktopMax) {
+    
+//     }
+    
+    @media ($laptopMin) and ($laptopMax) {
+        .badgets  {
+            display: inline;
+        }
         .imageBox {
             border: none;
+            margin: 0 auto;
+        }
+        .insignia {
+            width: 100px;
         }
     }
-    .insignia {
-        width: 100px;
+        
+    @media ($tabletMin) and ($tabletMax) {
+        .badgets  {
+            display: inline;
+        }
+        .imageBox {
+            border: none;
+            margin: 0 auto;
+        }
+        .insignia {
+            width: 100px;
+        }
     }
-}
+        
+    @media ($mobileMin) and ($mobileMax) {
+        .badgetTitle {
+            font-size: 1.4em;
+        }
+        .badgets  {
+            display: inline;
+            .imageBox {
+                border: none;
+            }
+        }
+        .insignia {
+            width: 100px;
+        }
+    }
+
+    @media (min-width: 1200px) and (max-width: 1284px) {
+        .badgetTitle {
+            font-size: 1.4em;
+        }
+        .badgets  {
+            display: inline;
+            .imageBox {
+                border: none;
+            }
+        }
+        .insignia {
+            width: 100px;
+        }
+    }

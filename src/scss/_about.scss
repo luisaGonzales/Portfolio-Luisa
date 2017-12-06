@@ -65,13 +65,36 @@
     }
 }
 
-@media (min-width : 768px  ) and (max-width : 1199px) {
-    .description {
-        padding-top: 30%;
-        padding-bottom: 30%;
-        text-orientation: justify;
+
+@media ($desktopMin) and ($desktopMax) {
+    
     }
-    #about {
-        margin: 0 auto;
+    
+    @media ($laptopMin) and ($laptopMax) {
+        .ability-title {
+            font-size: 1.2em;
+        }
     }
-} 
+        
+    @media ($tabletMin) {
+        .description {
+            padding-top: 15%;
+            padding-bottom: 15%;
+            padding-right: 0px;
+            text-orientation: justify;
+        }
+        #about {
+            margin: 0 auto;
+        }
+    }
+        
+    @media ($mobileMin) and ($mobileMax) {
+        .description {
+            padding-top: 15%;
+            padding-bottom: 15%;
+            text-orientation: justify;
+        }
+        #about {
+            margin: 0 auto;
+        }
+    }

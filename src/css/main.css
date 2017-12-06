@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat");
 @import url("https://fonts.googleapis.com/css?family=Dosis:300,400,500,600,700,800|Varela+Round");
-@import url("https://fonts.googleapis.com/css?family=Convergence|Muli");
 * {
   box-sizing: border-box; }
 
@@ -23,12 +22,12 @@
   color: #222222;
   background-color: transparent; }
 
-.titles, .titleAbout, .badgets .content .badgetTitle, .contact .titleContact, .titlePortfolio, .skills .titleSkills, .lang .titleLang {
+.titles, .titleAbout, .content .badgetTitle, .contact .titleContact, .titlePortfolio, .titleSkills, .titleLang {
   font-family: "Dosis", sans-serif;
   text-transform: uppercase;
   letter-spacing: 10px; }
 
-.texts, .textAbout, .badgets, .skills ul > li, .lang ul > li {
+.texts, .textAbout, .badgets, .ability-title {
   font-family: "Dosis", sans-serif;
   font-size: 1.4em; }
 
@@ -80,10 +79,22 @@
   .titleAbout {
     text-transform: uppercase;
     letter-spacing: 3px; } }
-@media (min-width: 768px) and (max-width: 1199px) {
+@media (min-width: 992px) and (max-width: 1199px) {
+  .ability-title {
+    font-size: 1.2em; } }
+@media (min-width: 768px) {
   .description {
-    padding-top: 30%;
-    padding-bottom: 30%;
+    padding-top: 15%;
+    padding-bottom: 15%;
+    padding-right: 0px;
+    text-orientation: justify; }
+
+  #about {
+    margin: 0 auto; } }
+@media (min-width: 240px) and (max-width: 768px) {
+  .description {
+    padding-top: 15%;
+    padding-bottom: 15%;
     text-orientation: justify; }
 
   #about {
@@ -92,53 +103,93 @@
   height: 160px;
   display: flex;
   margin: 0px; }
-  .badgets .content {
-    height: 100%;
-    background-color: #ffe042;
-    line-height: 1.5em;
-    font-size: 18px; }
-    .badgets .content .badgetTitle {
-      padding: 30px; }
-  .badgets .imageBox {
-    height: 100%;
-    border-left: 100px solid #ffe042;
-    border-bottom: 160px solid transparent;
-    background-position: -150px 0px;
-    position: relative; }
-    .badgets .imageBox .alls {
-      padding-top: 30px; }
-      .badgets .imageBox .alls .badge {
-        display: inline-block;
-        min-width: 10px;
-        padding: 3px 7px;
-        font-size: 12px;
-        font-weight: bold;
-        color: #222222;
-        line-height: 1;
-        vertical-align: baseline;
-        white-space: nowrap;
-        text-align: center;
-        border-radius: 10px;
-        background-color: transparent;
-        position: relative; }
-        .badgets .imageBox .alls .badge .insignia {
-          width: 110px; }
-        .badgets .imageBox .alls .badge .times {
-          width: 30px;
-          height: 30px;
-          background-color: #ffe042;
-          border-radius: 50%;
-          position: absolute;
-          bottom: 0px;
-          right: 15px;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          line-height: 20px; }
-          .badgets .imageBox .alls .badge .times p {
-            margin: 0; }
 
-@media (min-width: 319px) and (max-width: 480px) {
+.content {
+  height: 100%;
+  background-color: #ffe042;
+  line-height: 1.5em;
+  font-size: 18px; }
+  .content .badgetTitle {
+    padding: 30px; }
+
+.imageBox {
+  height: 100%;
+  border-left: 100px solid #ffe042;
+  border-bottom: 160px solid transparent;
+  background-position: -150px 0px;
+  position: relative; }
+
+.alls {
+  padding-top: 30px; }
+
+.badge {
+  display: inline-block;
+  min-width: 10px;
+  padding: 3px 7px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #222222;
+  line-height: 1;
+  vertical-align: baseline;
+  white-space: nowrap;
+  text-align: center;
+  border-radius: 10px;
+  background-color: transparent;
+  position: relative; }
+
+.insignia {
+  width: 110px; }
+
+.times {
+  width: 30px;
+  height: 30px;
+  background-color: #ffe042;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0px;
+  right: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 20px; }
+  .times p {
+    margin: 0; }
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .badgets {
+    display: inline; }
+
+  .imageBox {
+    border: none;
+    margin: 0 auto; }
+
+  .insignia {
+    width: 100px; } }
+@media (min-width: 768px) and (max-width: 991px) {
+  .badgets {
+    display: inline; }
+
+  .imageBox {
+    border: none;
+    margin: 0 auto; }
+
+  .insignia {
+    width: 100px; } }
+@media (min-width: 240px) and (max-width: 768px) {
+  .badgetTitle {
+    font-size: 1.4em; }
+
+  .badgets {
+    display: inline; }
+    .badgets .imageBox {
+      border: none; }
+
+  .insignia {
+    width: 100px; } }
+@media (min-width: 1200px) and (max-width: 1284px) {
+  .badgetTitle {
+    font-size: 1.4em; }
+
   .badgets {
     display: inline; }
     .badgets .imageBox {
@@ -151,18 +202,32 @@
   padding-bottom: 6%; }
   .contact .titleContact {
     padding: 4%; }
-  .contact .photoSmile {
-    background-image: url("../img/Smile.jpg");
-    height: 250px;
-    background-attachment: fixed;
-    position: relative;
-    background-repeat: no-repeat;
-    background-position: center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-position-y: -260px; }
+  .contact .fa-circle {
+    width: 100%;
+    color: #ffe042;
+    font-size: 100px; }
+  .contact .fa-inverse {
+    color: #222222;
+    font-size: 43px; }
+  .contact .fa-stack {
+    width: 4em; }
+  .contact .fa-stack-1x {
+    line-height: 100px; }
+  .contact .fa {
+    margin-right: 2%; }
+
+.photoSmile {
+  background-image: url("../img/Smile.jpg");
+  height: 250px;
+  background-attachment: fixed;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position-y: -260px; }
 
 .content-contact .form-control {
   background-color: rgba(255, 255, 255, 0.1);
@@ -195,23 +260,21 @@
   justify-content: center; }
 
 .icons {
+  padding-top: 5%;
   width: 100%;
-  height: 80px;
-  border-radius: 50%;
+  height: 225px;
   display: block;
-  align-content: center;
-  margin-right: 10px;
-  font-size: 0.8em; }
+  align-content: center; }
 
-.fa-circle {
-  color: #ffe042; }
-
-.fa-inverse {
-  color: #222222; }
-
-* {
-  outline: red solid 1px; }
-
+@media (min-width: 992px) and (max-width: 1199px) {
+  .photoSmile {
+    background-position-y: -260px; } }
+@media (min-width: 768px) and (max-width: 991px) {
+  .photoSmile {
+    background-position-y: 0px; } }
+@media (min-width: 240px) and (max-width: 768px) {
+  .photoSmile {
+    background-position-y: 0px; } }
 .header {
   background-image: url("../img/Header.jpg");
   -webkit-background-size: cover;
@@ -466,59 +529,40 @@ figure.snip1208:hover .btnsPortfolio,
 figure.snip1208.hover .btnsPortfolio {
   background-color: #ffe042; }
 
-.skills .all {
-  width: 100%; }
-.skills .titleSkills {
+.skills {
+  padding-bottom: 5%; }
+
+.ability-score {
+  float: right;
+  color: #ffe042;
+  font-size: 16px;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s; }
+
+.titleSkills {
   padding-top: 5%;
   padding-bottom: 2%; }
-.skills ul.no-bullets {
-  list-style-type: none;
-  margin: 0;
-  padding: 150px;
-  padding-top: 50px;
-  padding-bottom: 50px; }
-.skills ul > li {
-  min-height: 30px;
-  padding: 7px 0; }
-.skills .abilities ul > li .ability-title {
-  display: inline-block;
-  width: 60%; }
-.skills .ability-score {
-  float: right;
-  color: #ffe042;
-  font-size: 14px;
-  -webkit-transition: all .3s;
-  -moz-transition: all .3s;
-  -o-transition: all .3s;
-  transition: all .3s; }
 
-@media only screen and (min-width: 321px) and (max-width: 480px) {
-  .photoSmile {
-    height: 130px;
-    background-position-y: -140px; }
+.skill {
+  padding-bottom: 3%; }
 
-  ul.no-bullets {
-    padding: 68px; } }
-.lang ul.no-bullets {
-  list-style-type: none;
-  margin: 0;
-  padding: 150px;
-  padding-top: 50px;
-  padding-bottom: 50px; }
-.lang ul > li {
-  min-height: 30px;
-  padding: 7px 0; }
-.lang .abilities ul > li .ability-title {
-  display: inline-block;
-  width: 60%; }
-.lang .ability-score {
-  float: right;
-  color: #ffe042;
-  font-size: 14px;
-  -webkit-transition: all .3s;
-  -moz-transition: all .3s;
-  -o-transition: all .3s;
-  transition: all .3s; }
+@media (min-width: 992px) and (max-width: 1199px) {
+  .ability-title {
+    font-size: 1.2em; } }
+@media (min-width: 768px) {
+  .ability-title {
+    font-size: 1.2em; } }
+@media (min-width: 240px) and (max-width: 768px) {
+  .ability-title {
+    font-size: 1em; }
+
+  .ability-score {
+    font-size: 14px; } }
+.lang {
+  padding-top: 3%;
+  padding-bottom: 3%; }
 
 .footer {
   background-color: #222222;

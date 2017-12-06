@@ -1,39 +1,25 @@
 @import url('https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat');
-// @font-face {
-//     font-family: "Monthoers";
-//     src: url("../fonts/Monthoers.ttf");
-// }
-// @font-face {
-//     font-family: "Flow" ;
-//     src: url("../fonts/Flow.otf");
-// }
 @import url('https://fonts.googleapis.com/css?family=Dosis:300,400,500,600,700,800|Varela+Round');
-@import url('https://fonts.googleapis.com/css?family=Convergence|Muli');
 // Colors
-
 $light : #ffe042;
 $lightOpacity : #ffe0425d;
 $dark : #222222;
 $neutro : #ffffff;
-
-
-
 //Fonts
-
 $font1 : 'Kaushan Script', cursive;
 $font2 : 'Dosis', sans-serif;
-$font3 : 'Muli', sans-serif;
-$font4 : 'Convergence', sans-serif;
-//Fuentes de texto
-// $font1 : 'Montserrat', sans-serif;
 
-// $font3 : 'Monthoers', cursive;
-// $font4 : 'Varela Round', sans-serif;
-// $font5 : 
-// $font6 : 'Flow', cursive;
+//MEDIA-QUERIES
+$full-hd: "(min-width: 1400px)";
+$desktopMin: "min-width: 1200px";
+$desktopMax: "max-width: 1399px";
+$laptopMin: "min-width:992px";
+$laptopMax: 'max-width:1199px';
+$tabletMin: "min-width: 768px";
+$tabletMax: "max-width: 991px";
+$mobileMax: 'max-width: 768px';
+$mobileMin: "min-width: 240px";
 
-//Size font
-$sizep : 1.2em;
 //mixins
 @mixin border-radius($radius) {
     -webkit-border-radius: $radius;

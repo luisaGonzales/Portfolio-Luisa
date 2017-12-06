@@ -1,46 +1,51 @@
 .skills {
-    .all {
-        width: 100%;
-    }
-    .titleSkills {
-        @extend .titles;
-        padding-top: 5%;
-        padding-bottom: 2%;
-    }
-    ul.no-bullets {
-        list-style-type: none;
-        margin: 0;
-        padding: 150px;
-        padding-top: 50px;
-        padding-bottom: 50px;
-    }
-    ul>li {
-        @extend .texts;
-        min-height: 30px;
-        padding: 7px 0;
-    }
-    .abilities ul>li .ability-title {
-        display: inline-block;
-        width: 60%;
-        
-    }
-    .ability-score {
-        float: right;
-        color: $light;
-        font-size: 14px;
-        -webkit-transition: all .3s;
-        -moz-transition: all .3s;
-        -o-transition: all .3s;
-        transition: all .3s;
-    }
+    padding-bottom: 5%;
+}
+.ability-score {
+    float: right;
+    color: $light;
+    font-size: 16px;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
 }
 
-@media only screen and (min-width : 321px) and (max-width : 480px) {
-    .photoSmile {
-        height: 130px;
-        background-position-y: -140px;
+.titleSkills {
+    @extend .titles;
+    padding-top: 5%;
+    padding-bottom: 2%;
+}
+
+.ability-title {
+    @extend .texts; 
+}
+
+.skill {
+    padding-bottom: 3%;
+}
+
+@media ($desktopMin) and ($desktopMax) {
+
+}
+
+@media ($laptopMin) and ($laptopMax) {
+    .ability-title {
+        font-size: 1.2em;
     }
-    ul.no-bullets {
-        padding: 68px;
+}
+    
+@media ($tabletMin) {
+    .ability-title {
+        font-size: 1.2em;
+    }
+}
+    
+@media ($mobileMin) and ($mobileMax) {
+    .ability-title {
+        font-size: 1em;
+    }
+    .ability-score {
+        font-size: 14px;
     }
 }
