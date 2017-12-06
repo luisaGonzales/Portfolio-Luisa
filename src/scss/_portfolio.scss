@@ -13,7 +13,13 @@
   z-index : 2;
 }
 
-.snip1401 {
+.allProjects {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.projectsList {
   position: relative;
   float: left;
   overflow: hidden;
@@ -27,18 +33,18 @@
   font-size: 16px;
   background-color: transparent;
 }
-.snip1401 * {
+.projectsList * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   -webkit-transition: all 0.35s ease;
   transition: all 0.35s ease;
 }
-.snip1401 img {
+.projectsList img {
   max-width: 100%;
   backface-visibility: hidden;
 }
 //Arrow derecha
-.snip1401 figcaption {
+.projectsList figcaption {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -51,7 +57,7 @@
   -webkit-transform: translateX(150%);
   transform: translateX(150%);
 }
-.snip1401 figcaption:before {
+.projectsList figcaption:before {
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -64,7 +70,7 @@
   border-width: 120px 120px 120px 0;
   border-color: transparent $light transparent transparent;
 }
-.snip1401:after {
+.projectsList:after {
   position: absolute;
   bottom: 50%;
   right: 40%;
@@ -79,34 +85,34 @@
   -webkit-transition: all 0.35s ease;
   transition: all 0.35s ease;
 }
-.snip1401 h3,
-.snip1401 p {
+.projectsList h3,
+.projectsList p {
   line-height: 1.5em;
   -webkit-transform: translateX(-30px);
   transform: translateX(-30px);
   margin: 0;
 }
-.snip1401 h3 {
+.projectsList h3 {
   margin: 0 0 5px;
   line-height: 1.1em;
   font-weight: 900;
   font-size: 1.4em;
   opacity: 0.75;
 }
-.snip1401 p {
+.projectsList p {
   font-size: 0.8em;
 }
-.snip1401 i {
+.projectsList i {
   position: absolute;
   bottom: 0;
   left: 0;
   padding: 20px 30px;
   font-size: 44px;
-  color: #ffffff;
+  color: $dark;
   opacity: 0;
 }
 
-.snip1401 a {
+.projectsList a {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -114,19 +120,19 @@
   right: 0;
   z-index: 1;
 }
-.snip1401:hover img,
-.snip1401.hover img {
+.projectsList:hover img,
+.projectsList.hover img {
   zoom: 1;
   filter: alpha(opacity=50);
   -webkit-opacity: 0.5;
   opacity: 0.5;
 }
-.snip1401:hover:after,
-.snip1401.hover:after,
-.snip1401:hover figcaption,
-.snip1401.hover figcaption,
-.snip1401:hover i,
-.snip1401.hover i {
+.projectsList:hover:after,
+.projectsList.hover:after,
+.projectsList:hover figcaption,
+.projectsList.hover figcaption,
+.projectsList:hover i,
+.projectsList.hover i {
   -webkit-transform: translateX(0);
   transform: translateX(0);
   opacity: 1;

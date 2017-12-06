@@ -24,11 +24,16 @@ $size : 160px;
     border-bottom: $size solid transparent;
     background-position: -150px 0px;
     position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     
 }
 .alls {
     padding-top: 30px;
-    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;   
 }
 
 .badge {
@@ -66,9 +71,11 @@ $size : 160px;
     }
 }
 
-// @media ($desktopMin) and ($desktopMax) {
-    
-//     }
+@media ($desktopMin) and ($desktopMax) {
+    .alls {
+        display: inline;
+    }
+}
     
     @media ($laptopMin) and ($laptopMax) {
         .badgets  {
