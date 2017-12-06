@@ -5,7 +5,8 @@ import {
     Row,
     Image,
     Tooltip,
-    OverlayTrigger
+    OverlayTrigger, 
+    bsStyle
 } from 'react-bootstrap';
 import '../css/main.css';
 

@@ -4,23 +4,14 @@ import '../css/main.css';
 
 const Project = ({image, titleProject, descriptionProject, demo, index, github}) => {
     return (
-        <figure className="snip1208">
-            <img src={image} width="310px" height="221px"/>
-            {/*<div className="date">
-                <span className="day">{index}</span>
-            </div>*/}
-                <i class="fa fa-desktop" aria-hidden="true"></i>
-            <figcaption>
-                <h3 className="text-center">{titleProject}</h3>
-                <p>
-                    {descriptionProject}
-                </p>
-                <div>
-                    <span><a target="_blank" className="btnsPortfolio" href={demo}>demo</a></span>
-                    <span><a target="_blank" className="btnsPortfolio" href={github}>code</a></span>
-                </div>
-            </figcaption>
-        </figure>
+        <figure className="snip1401">
+        <Image src={image} alt="project" className="portfolioImg" width="310px" height="200px" />
+        <figcaption>
+          <h3>{titleProject}</h3>
+          <span><a target="_blank" className="btnsPortfolio seeGithub" href={github}>git<i class="fa fa-github" aria-hidden="true"></i></a></span>
+        </figcaption>
+        <span><a target="_blank" className="btnsPortfolio" href={demo}><i className="fa fa-eye" aria-hidden="true"></i></a></span>      
+      </figure>
     );
 }
 
@@ -28,8 +19,8 @@ export const Portfolio = ({title, info}) => {
     console.log(info);
     const list = info.projects.imgs.map((img, index)=> {
         return (
-            <Col sm={4}>
-                <Project github={info.projects.github[index]} index={index + 1} image={img} titleProject={info.projects.titles[index]} demo={info.projects.demo[index]}/>
+            <Col lg={4} md={12} sm={12} xs={12} >
+                <Project key={index} github={info.projects.github[index]} index={index + 1} image={img} titleProject={info.projects.titles[index]} demo={info.projects.demo[index]}/>
             </Col>  
         );
     } )

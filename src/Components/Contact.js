@@ -11,7 +11,7 @@ import '../css/main.css';
 
 const Icon = ({url, font}) => {
     return (
-        <Col md={2}>
+        <Col lg={12} md={2} sm={12} xs={12}>
             <span className="fa-stack fa-lg">
                 <a target="_blank" href={url}>
                     <i class="fa fa-circle fa-stack-2x"></i>
