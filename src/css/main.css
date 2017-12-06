@@ -195,6 +195,9 @@
 
   .insignia {
     width: 100px; } }
+@media (min-width: 1400px) {
+  .alls {
+    display: inline; } }
 @media (min-width: 1200px) and (max-width: 1284px) {
   .badgetTitle {
     font-size: 1.4em; }

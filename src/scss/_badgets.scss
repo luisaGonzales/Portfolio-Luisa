@@ -76,7 +76,8 @@ $size : 160px;
         display: inline;
     }
 }
-    
+
+
     @media ($laptopMin) and ($laptopMax) {
         .badgets  {
             display: inline;
@@ -115,6 +116,12 @@ $size : 160px;
         }
         .insignia {
             width: 100px;
+        }
+    }
+
+    @media (min-width : 1400px) {
+        .alls {
+            display: inline;
         }
     }
 
