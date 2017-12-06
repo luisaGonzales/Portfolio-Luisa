@@ -78,7 +78,7 @@ export const Lang = ({title}) => {
                             <span className="ability-score pull-left">
                                 <i className="fa fa-star filled" aria-hidden="true"></i>
                                 <i className="fa fa-star filled" aria-hidden="true"></i>
-                                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                <i className="fa fa-star-half-o" aria-hidden="true"></i>
                                 <i className="fa fa-star-o" aria-hidden="true"></i>
                                 <i className="fa fa-star-o" aria-hidden="true"></i>
                             </span>
@@ -106,7 +106,7 @@ export const Lang = ({title}) => {
 
                             <span className="ability-score pull-left">
                                 <i className="fa fa-star filled" aria-hidden="true"></i>
-                                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                <i className="fa fa-star-half-o" aria-hidden="true"></i>
                                 <i className="fa fa-star-o" aria-hidden="true"></i>
                                 <i className="fa fa-star-o" aria-hidden="true"></i>
                                 <i className="fa fa-star-o" aria-hidden="true"></i>

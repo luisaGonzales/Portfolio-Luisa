@@ -8,7 +8,7 @@ const Project = ({image, titleProject, descriptionProject, demo, index, github})
         <Image src={image} alt="project" className="portfolioImg" width="310px" height="200px" />
         <figcaption>
           <h3>{titleProject}</h3>
-          <span><a target="_blank" className="seeGithub" href={github}>git<i class="fa fa-github" aria-hidden="true"></i></a></span>
+          <span><a target="_blank" className="seeGithub" href={github}>git<i className="fa fa-github" aria-hidden="true"></i></a></span>
         </figcaption>
         <span><a target="_blank" href={demo}><i className="fa fa-eye" aria-hidden="true"></i></a></span>      
       </figure>

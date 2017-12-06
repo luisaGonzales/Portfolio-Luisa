@@ -48,7 +48,7 @@ export const Skills = ({title}) => {
                                 <i className="fa fa-star filled" aria-hidden="true"></i>
                                 <i className="fa fa-star filled" aria-hidden="true"></i>
                                 <i className="fa fa-star filled" aria-hidden="true"></i>
-                                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                <i className="fa fa-star-half-o" aria-hidden="true"></i>
                                 <i className="fa fa-star-o" aria-hidden="true"></i>
                             </span>
                         </Col>
@@ -71,7 +71,7 @@ export const Skills = ({title}) => {
                                 <i className="fa fa-star filled" aria-hidden="true"></i>
                                 <i className="fa fa-star filled" aria-hidden="true"></i>
                                 <i className="fa fa-star filled" aria-hidden="true"></i>
-                                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                <i className="fa fa-star-half-o" aria-hidden="true"></i>
                             </span>
                         </Col>
                     </Row>
@@ -93,7 +93,7 @@ export const Skills = ({title}) => {
                                 <i className="fa fa-star filled" aria-hidden="true"></i>
                                 <i className="fa fa-star filled" aria-hidden="true"></i>
                                 <i className="fa fa-star filled" aria-hidden="true"></i>
-                                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                <i className="fa fa-star-half-o" aria-hidden="true"></i>
                             </span>
                         </Col>
                     </Row>
@@ -205,7 +205,7 @@ export const Skills = ({title}) => {
                                 <i className="fa fa-star filled" aria-hidden="true"></i>
                                 <i className="fa fa-star filled" aria-hidden="true"></i>
                                 <i className="fa fa-star filled" aria-hidden="true"></i>
-                                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                <i className="fa fa-star-half-o" aria-hidden="true"></i>
                             </span>
                         </Col>
                     </Row>
