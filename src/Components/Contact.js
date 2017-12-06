@@ -8,26 +8,12 @@ import {
     OverlayTrigger
 } from 'react-bootstrap';
 import '../css/main.css';
-
-const Icon = ({url, font}) => {
-    return (
-        <Col lg={12} md={2} sm={12} xs={12}>
-            <span className="fa-stack fa-lg">
-                <a target="_blank" href={url}>
-                    <i class="fa fa-circle fa-stack-2x"></i>
-                    <i className={font} aria-hidden="true"></i>
-                </a>
-            </span>
-        </Col>
-    );
-}
+import resume from '../Archives/LuisaGonzalesCV.pdf';
 
 export const Contact = ({title}) => {
     const phone = (
         <Tooltip id="tooltip">
-            <strong>+51
-            </strong>
-            943572159</Tooltip>
+            <strong>+51 </strong> 943572159</Tooltip>
     );
     return (
         <Grid fluid>
@@ -64,27 +50,53 @@ export const Contact = ({title}) => {
                     </form>
                 </Col>
                 <Col md={12} sm={12} xs={12} lg={12}>
-                    <Row className="icons text-center">
-                        <Col mdOffset={3}>
-                            <Icon
-                                url={"https://www.facebook.com/luisa.gonzales.58"}
-                                font={"fa fa-facebook fa-stack-1x fa-inverse"}/>
-                            <Icon
-                                url={"https://www.linkedin.com/in/luisagonzalescaceres/"}
-                                font={"fa fa-linkedin fa-stack-1x fa-inverse"}/>
-                            <Icon
-                                url={"https://github.com/luisaGonzales"}
-                                font={"fa fa-github fa-stack-1x fa-inverse"}/>
-                            <Col md={2}>
-                                <OverlayTrigger placement="top" overlay={phone}>
-                                    <span className="fa-stack fa-lg">
-                                        <i class="fa fa-circle fa-stack-2x"></i>
-                                        <i className="fa fa-mobile fa-stack-1x fa-inverse " aria-hidden="true"></i>
-                                    </span>
-                                </OverlayTrigger>
-                            </Col>
-                        </Col>
-                    </Row>
+                    <section id="contact">
+                        <div className="contact-wrapper">
+                            <ul className="contact-icons-list">
+                                <li>
+                                    <OverlayTrigger placement="top" overlay={phone}>
+                                        <span
+                                            className="contact-icon">
+                                            <span className="icon-span">
+                                                <i className="fa fa-mobile icon-font"></i>
+                                            </span>
+                                        </span>
+                                    </OverlayTrigger>
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://www.linkedin.com/in/luisagonzalescaceres/"
+                                        target="_blank"
+                                        className="contact-icon">
+                                        <span className="icon-span">
+                                            <i className="fa fa-linkedin icon-font"></i>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://github.com/luisaGonzales"
+                                        target="_blank"
+                                        className="contact-icon">
+                                        <span className="icon-span">
+                                            <i className="fa fa-github icon-font"></i>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href={resume}
+                                        download
+                                        target="_blank"
+                                        className="contact-icon">
+                                        <span className="icon-span">
+                                            <i className="fa fa-download icon-font"></i>
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
                 </Col>
             </Row>
         </Grid>
