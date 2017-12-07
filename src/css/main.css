@@ -336,7 +336,7 @@
         transform: scale(1.2);
         transition-timing-function: cubic-bezier(0.3, 0.7, 0.1, 1.6); }
       .contact-icons-list li:hover .icon-font {
-        color: #ffe042; }
+        color: #222222; }
 
 .icon-font {
   color: #222222;
@@ -462,9 +462,6 @@
 .author {
   font-size: 1.2em;
   padding-right: 20%; }
-
-* {
-  outline: red solid 1px; }
 
 .iconSee, .iconCode {
   font-size: 2em;
@@ -636,6 +633,6 @@
   background-color: #222222;
   padding: 20px;
   color: #ffffff;
-  font-family: "Kaushan Script", cursive; }
+  font-family: "Dosis", sans-serif; }
 
 /*# sourceMappingURL=main.css.map */
