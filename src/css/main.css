@@ -463,6 +463,9 @@
   font-size: 1.2em;
   padding-right: 20%; }
 
+* {
+  outline: red solid 1px; }
+
 .iconSee, .iconCode {
   font-size: 2em;
   padding-top: 1.5px;
@@ -575,8 +578,7 @@
   top: 0;
   bottom: 0;
   left: 0;
-  right: 0;
-  z-index: 1; }
+  right: 0; }
 
 .projectsList:hover img,
 .projectsList.hover img {
