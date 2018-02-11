@@ -7,8 +7,8 @@ import {connect} from 'redux-zero/react';
 
 export const About = ({title, info, titleResume}) => {
     return (
-        <Grid container-fluid>
-            <Row id="about" className="show-grid">
+        <Grid fluid>
+            <Row id="about">
                 <Col md={6} smHidden xsHidden lg={6}>
                     <Image src={photo} alt="me" className="photo" responsive/>
                 </Col>

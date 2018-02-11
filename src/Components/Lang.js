@@ -5,8 +5,7 @@ import {
     Row,
     Image,
     Tooltip,
-    OverlayTrigger, 
-    bsStyle
+    OverlayTrigger
 } from 'react-bootstrap';
 import '../css/main.css';
 
@@ -35,7 +34,7 @@ export const Lang = ({title}) => {
                         <Col mdOffset={2} md={4} smOffset={1} sm={5} xs={6} lgOffset={2} lg={4}>
                             <span className="ability-title">
                                 <OverlayTrigger placement="top" overlay={avanzado}>
-                                    <span bsStyle="default">Español/Materna</span>
+                                    <span>Español/Materna</span>
                                 </OverlayTrigger>
                             </span>
                         </Col>
@@ -61,7 +60,7 @@ export const Lang = ({title}) => {
                         <Col mdOffset={2} md={4} smOffset={1} sm={5} xs={6} lgOffset={2} lg={4}>
                             <span className="ability-title">
                                 <OverlayTrigger placement="bottom" overlay={intermedio}>
-                                    <span bsStyle="default">English</span>
+                                    <span>English</span>
                                 </OverlayTrigger>
                             </span>
                         </Col>
@@ -90,7 +89,7 @@ export const Lang = ({title}) => {
                         <Col mdOffset={2} md={4} smOffset={1} sm={5} xs={6} lgOffset={2} lg={4}>
                             <span className="ability-title">
                                 <OverlayTrigger placement="top" overlay={basico}>
-                                    <span bsStyle="default">Português</span>
+                                    <span>Português</span>
                                 </OverlayTrigger>
                             </span>
                         </Col>
