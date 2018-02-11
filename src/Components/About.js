@@ -7,23 +7,23 @@ import {connect} from 'redux-zero/react';
 
 export const About = ({title, info, titleResume}) => {
     return (
-        <Grid fluid>
-           
-                <Row id="about">
-                    <Col md={6} smHidden xsHidden lg={6}>
-                        <Image src={photo} alt="me" className="photo" responsive/>
-                    </Col>
-                    <Col md={6} sm={12} xs={12} lg={6}>
-                        <div className="description">
-                                <h1 className="titleAbout text-center">{title}</h1>
-                                <p className="textAbout">{info}</p>
-                                <div className="resume text-center">
-                                    <a target="_blank" href={resume} download className="linkCV">{titleResume} <i className="fa fa-download" aria-hidden="true"></i></a>
-                                </div>
+        <Grid container-fluid>
+            <Row id="about" className="show-grid">
+                <Col md={6} smHidden xsHidden lg={6}>
+                    <Image src={photo} alt="me" className="photo" responsive/>
+                </Col>
+                <Col md={6} sm={12} xs={12} lg={6}>
+                    <div className="description">
+                        <h1 className="titleAbout text-center">{title}</h1>
+                        <p className="textAbout">{info}</p>
+                        <div className="resume text-center">
+                            <a target="_blank" href={resume} download className="linkCV">{titleResume}
+                                <i className="fa fa-download" aria-hidden="true"></i>
+                            </a>
                         </div>
-                    </Col>
-                </Row>
-            
+                    </div>
+                </Col>
+            </Row>
         </Grid>
     );
 }

@@ -6,7 +6,7 @@ export const Skills = ({title}) => {
 
     return (
         <Grid fluid>
-            <Row className="skills">
+            <Row className="skills show-grid">
                 <h1 className="titleSkills text-center text-capitalize">{title}</h1>
                 <Col md={6} sm={6} xs={12} lg={6}>
                     <Row className="skill">

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'redux-zero/react';
 import {Grid, Row, Col} from 'react-bootstrap';
+import './Archives/css/bootstrap.min.css';
 import './App.css'
 import {Header} from './Components/Header';
 import {Navigator} from './Components/Nav';
