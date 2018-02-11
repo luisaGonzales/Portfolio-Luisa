@@ -1,8 +1,8 @@
 {
-  "main.css": "static/css/main.fc6800b3.css",
-  "main.css.map": "static/css/main.fc6800b3.css.map",
-  "main.js": "static/js/main.9de25c56.js",
-  "main.js.map": "static/js/main.9de25c56.js.map",
+  "main.css": "static/css/main.ded164ba.css",
+  "main.css.map": "static/css/main.ded164ba.css.map",
+  "main.js": "static/js/main.8b6e26ef.js",
+  "main.js.map": "static/js/main.8b6e26ef.js.map",
   "static\\media\\Asientos.png": "static/media/Asientos.6dd63393.png",
   "static\\media\\Bootstrap.png": "static/media/Bootstrap.e3e5ac98.png",
   "static\\media\\Foto.jpg": "static/media/Foto.c9257438.jpg",
@@ -17,5 +17,10 @@
   "static\\media\\Scoreboard.png": "static/media/Scoreboard.ff72ab03.png",
   "static\\media\\Smile.jpg": "static/media/Smile.de671d6e.jpg",
   "static\\media\\Te.png": "static/media/Te.d2ead4a3.png",
-  "static\\media\\button-bg.svg": "static/media/button-bg.f5af6d12.svg"
+  "static\\media\\button-bg.svg": "static/media/button-bg.f5af6d12.svg",
+  "static\\media\\glyphicons-halflings-regular.eot": "static/media/glyphicons-halflings-regular.f4769f9b.eot",
+  "static\\media\\glyphicons-halflings-regular.svg": "static/media/glyphicons-halflings-regular.89889688.svg",
+  "static\\media\\glyphicons-halflings-regular.ttf": "static/media/glyphicons-halflings-regular.e18bbf61.ttf",
+  "static\\media\\glyphicons-halflings-regular.woff": "static/media/glyphicons-halflings-regular.fa277232.woff",
+  "static\\media\\glyphicons-halflings-regular.woff2": "static/media/glyphicons-halflings-regular.448c34a5.woff2"
 }
